@@ -1,0 +1,26 @@
+<div class="search-container">
+
+  <app-search-bar (search)="onSearch($event)"></app-search-bar>
+  <div *ngIf="searchQuery.length >= 2" class="exp-dropdown">
+    <div *ngFor="let exp of searchedExps" class="exp-item">
+      <a class="item" (click)="goToSkillDetails(exp.experienceId)">{{ exp.firm }}</a>
+    </div>
+  </div>
+</div>
+<div class="container">
+
+  <div class="content">
+
+    <div class="line"></div>
+    <h2 class="philosophy">Ma philosophie</h2>
+    <div class="line"></div>
+
+    <div class="quote-container">
+      <p class="quote">citation ici</p>
+    </div>
+    <div class="line"></div>
+    <h2 class="experience">Mes experiences</h2>
+    <div class="line"></div>
+
+    <app-container-card-experience></app-container-card-experience>
+  </div>

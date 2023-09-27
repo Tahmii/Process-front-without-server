@@ -1,0 +1,66 @@
+.container {
+  background-color: #f6f6f6;
+  margin-top: 107px;
+}
+
+.content {
+  text-align: start;
+  background-color: #f0ede5;
+  padding-bottom: 120px;
+  margin-top: 120px;
+
+}
+
+
+.right,
+.left {
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 150px;
+  margin-right: 15px;
+  margin-left: 15px;
+  padding-top: 75px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.left {
+  margin-right: 25px;
+}
+
+a {
+  margin: 30px;
+}
+
+.logo {
+  width: 200px;
+  margin-right: 10px;
+  margin-left: 25px;
+}
+
+
+.line {
+  border-top: 3px solid #001f3f;
+  margin: 5px 0 0;
+
+}
+
+.contact {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 1px;
+  margin-left: 20px;
+}

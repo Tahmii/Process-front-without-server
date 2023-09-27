@@ -1,0 +1,15 @@
+<div class="container-card">
+  <div class="scrollable-container">
+    <div *ngFor="let group of groupSkillsByStack(); let stackIndex = index">
+      <h2 class="stack-title">{{ group.stack }}</h2>
+      <div class="card-container">
+        <div *ngFor="let competence of group.skills; let cardIndex = index" class="competence-card">
+          <app-skill-card [titre]="competence.name" [niveau]="competence.niveau" [pastime]="competence.pastime"
+            [skillId]="competence.skillId"></app-skill-card>
+        </div>
+        <div class="clear-row" *ngIf="cardIndex % 3 === 2"></div>
+      </div>
+      <div class="line"></div>
+    </div>
+  </div>
+</div>

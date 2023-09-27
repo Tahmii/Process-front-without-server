@@ -1,0 +1,94 @@
+.container {
+    background-color: #f6f6f6;
+    margin-top: 107px;
+}
+
+.content {
+    text-align: start;
+    margin-top: 120px;
+
+}
+
+
+.right,
+.left {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 75px;
+    background-color: #f0ede5;
+    padding-bottom: 80px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.left {
+    margin-right: 150px;
+}
+
+.quote {
+    font-size: 18px;
+    margin: 0;
+    font-style: italic;
+    color: #333;
+}
+
+.quote-container {
+    background-color: #f0ede5;
+    border-radius: 10px;
+    padding: 20px;
+    border: none;
+    text-align: center;
+    max-width: 1000px;
+    margin: 70px auto;
+}
+
+
+
+a {
+    margin: 30px;
+}
+
+.french {
+    width: 600px;
+    margin-right: 10px;
+    margin-left: 25px;
+}
+
+.english {
+    width: 600px;
+    margin-right: 10px;
+    margin-left: 25px;
+}
+
+.logo {
+    width: 600px;
+    margin-right: 10px;
+    margin-left: 25px;
+}
+
+
+.line {
+    border-top: 3px solid #001f3f;
+    margin: 5px 0 0;
+
+}
+
+.contact {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 1px;
+    margin-left: 20px;
+}

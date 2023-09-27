@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    margin-top: 95px;
+    background-color: #f0ede5;
+    justify-content: center;
+}
+
+
+.logo {
+    width: 800px;
+    margin-right: 10px;
+    margin-left: 25px;
+}

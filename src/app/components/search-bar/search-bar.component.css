@@ -1,0 +1,39 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 8px;
+  width: 30%;
+  justify-content: center;
+  margin: 40px auto 0 auto;
+
+}
+
+.custom-icon {
+  width: 20px;
+  height: 20px;
+  fill: #333;
+  margin-right: 8px;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+  fill: #333;
+  margin-right: 8px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+input:focus+svg {
+  opacity: 1;
+}

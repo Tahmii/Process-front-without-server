@@ -1,0 +1,16 @@
+.container-card {
+  background-color: #f0ede5;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 60px;
+  overflow-x: auto;
+  align-items: center;
+}
+
+.competence-card {
+  margin: 25px;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+}

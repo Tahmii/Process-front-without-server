@@ -1,0 +1,32 @@
+<div class="container" *ngIf="skill">
+  <div class="content">
+    <div class="button-container">
+      <button class="back-button" (click)="retourALaListe()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+          <path
+            d="M25.6 36.3c.4.4.4 1 0 1.4s-1 .4-1.4 0L9.9 22.6c-.2-.2-.3-.4-.3-.7s.1-.5.3-.7l14.3-14.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4L12.8 20h25.7c.6 0 1 .4 1 1s-.4 1-1 1H12.8l11.4 11.3z"
+            fill="#000" />
+        </svg>
+      </button>
+    </div>
+
+
+    <div class="line"></div>
+    <h2 class="stack">Stack Technique <span style="font-style: italic">{{skill.stack}}</span></h2>
+    <div class="line"></div>
+
+    <div class="quote-container">
+      <p class="quote">{{skill.context}}</p>
+    </div>
+
+    <div class="grid-container">
+      <div class="left-column">
+        <app-skill-card-detail class="skill-card" [titre]="skill.name" [niveau]="skill.niveau"
+          [pastime]="skill.pastime"></app-skill-card-detail>
+      </div>
+      <div class="right-column">
+        <app-svg [svgContent]="skill.svg"></app-svg>
+      </div>
+    </div>
+  </div>
+</div>

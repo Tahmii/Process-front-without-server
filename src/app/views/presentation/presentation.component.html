@@ -1,0 +1,24 @@
+<div class="container" *ngIf="presentation">
+  <div class="line"></div>
+  <h2 class="contact">Bienvenue sur mon portfolio</h2>
+  <div class="line"></div>
+  <div class="content">
+    <div class="quote-container">
+      <p class="quote">{{presentation.spitch}}</p>
+    </div>
+
+
+    <div class="container-card">
+      <div class="left">
+        <app-presentation-card [firstName]="presentation.firstName" [lastName]="presentation.lastName"
+          [phone]="presentation.phone" [infoComplementaire]="presentation.infoComplementaire"
+          [years]="presentation.years" [job]="presentation.job" [email]="presentation.email"></app-presentation-card>
+      </div>
+      <div class="right">
+        <a href="https://fr.linkedin.com/in/tahmi-matti-a30560214">
+          <img src="../../../assets/pic.svg" alt="picture" class="logo">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

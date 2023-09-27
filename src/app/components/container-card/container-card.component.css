@@ -1,0 +1,39 @@
+.container-card {
+  background-color: #f0ede5;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 60px;
+  overflow-x: auto;
+  align-items: center;
+}
+
+.stack-title {
+  position: relative;
+  left: 10px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.line {
+  border-top: 1px solid #001f3f;
+  margin: 5px 0 0;
+  width: 100%;
+}
+
+.scrollable-container {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.competence-card {
+  width: 30%;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  display: inline-block;
+  vertical-align: top;
+}

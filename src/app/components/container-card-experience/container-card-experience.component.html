@@ -1,0 +1,9 @@
+<div class="container-card">
+  <ng-container *ngFor="let exp of experience; let cardIndex = index">
+    <div class="competence-card">
+
+      <app-experience-card [firm]="exp.firm" [poste]="exp.poste" [pastime]="exp.pastime" [contrat]="exp.contrat"
+        [experienceId]="exp.experienceId"> </app-experience-card>
+    </div>
+  </ng-container>
+</div>
